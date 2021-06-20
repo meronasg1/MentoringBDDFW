@@ -15,7 +15,7 @@ public class TestBase {
 
     @BeforeMethod
     public static void setupDriver() {
-        System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
